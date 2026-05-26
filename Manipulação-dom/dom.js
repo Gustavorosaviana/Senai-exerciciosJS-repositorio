@@ -85,3 +85,63 @@
 // elemento.addEventListener("mouseover", () => {
 //     elemento.style.backgroundColor = "#FF0000"
 // })
+
+// // mouseout -> quando o mouse sai de cima do elemento
+// elemento.addEventListener("mouseout", () => {
+//     // elemento.style.backgroundColor = "#0000FF";
+//     botao.style.backgroundColor = "#0000FF";
+//     elemento.style.backgroundColor = "";
+// })
+
+// mousemove -> pegar a posição do mouse
+// document.addEventListener("mousemove", (evento) => {
+//     console.log("Posição de X: ", evento.clientX, " Posição de Y: ", evento.clientY);
+// })
+
+// Evento de fomrulário (submit)
+// const form = document.getElementById("form");
+
+// comportamento padrão de um formulário é recarregar a página
+// form.addEventListener("submit", (evento) => {
+    // evento.preventDefault(); // impede o comportamento padrão
+
+//     const nome = document.getElementById("nome").value;
+//     console.log("Nome: " + nome);
+// })
+
+
+// criando elementos na página
+// const novoElemento = document.createElement("p"); // cria um elemento <p>
+// novoElemento.innerText = "Elemento novo criado"; // cria um texeto no elemento
+
+// form.appendChild(novoElemento); // estamos adicionando um elemento filho (p) dentro do pai (form).
+
+// const botao = document.createElement("button");
+// botao.innerText = "Excluir elemento";
+// form.appendChild(botao);
+
+// botao.addEventListener("click", (e) => {
+//     e.preventDefault();
+
+//     novoElemento.remove();
+
+//     // apagando direto do pai
+//     // form.removeChild(novoElemento)
+// })
+
+
+// adicionando elementos em uma lista não ordenada (ul) através de um input
+const input = document.getElementById("input") // input
+const botao = document.getElementById("add") // button
+const lista = document.getElementById("lista") // ul
+
+botao.addEventListener("click", () => {
+    const valor = input.value; // pega o valor digitado na caixinha (input)
+
+    const li= document.createElement("li");
+    li.innerText = valor; // li recebe o texto digitado na caixinha
+
+    lista.appendChild(li); // <li> vai ser criado dentro do <ul>
+
+    input.value = "";
+})
