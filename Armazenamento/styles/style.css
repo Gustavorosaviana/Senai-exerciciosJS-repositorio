@@ -1,0 +1,41 @@
+
+
+body {
+    background-color: #F4F4F4;
+    
+    /* deixa os elementos flexíveis na tela, permitindo que possamos usar alguns comandos de posicionamento dos elementos filhos */
+    display: flex; 
+    justify-content: center;  /* alinha os elementos na direção do flex*/
+    align-items: center; /* alinha os elementos na direção contrária do flex*/
+
+    /* height é a altura do elemento, quando temos vh significa que estamos dando um tamanho pro elemento que corresponde a uma "porcentagem" da tela -> viewport height*/
+    height: 100vh;
+}
+
+#caixa {
+    background-color: #FFFFFF;
+    width: 350px; /* largura da caixinha*/
+    padding: 20px; /* espaçamento dentro da caxinha*/
+    border: 5px solid #000000;
+    border-radius: 20px; /* arredondamento dos cantos da caixinha*/
+}
+
+#input-tarefa{
+    width: 70%; /* largura em porcentagem caluclada em cima do elemento pai (caixa)*/
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+#botao-adicionar{
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 9px;
+    border: 1px solid #CCCCCC;
+}
+
+#titulo{
+    text-align: center;
+}
