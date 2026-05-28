@@ -2,7 +2,6 @@ const input = document.getElementById("input");
 const botaoAdicionar = document.getElementById("botao-adicionar");
 const lista = document.getElementById("lista");
 const mensagem = document.getElementById("mensagem");
-const botaoRemover = document.getElementById("botao-remover");
 
 botaoAdicionar.addEventListener("click", function () {
 
@@ -28,7 +27,3 @@ botaoAdicionar.addEventListener("click", function () {
     });
 
 });
-
-// botaoRemover.addEventListener("click", function () {
-//     lista.remove();
-// })
